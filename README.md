@@ -68,4 +68,10 @@ vue init username/repo my-project
 
 1. 增加状态管理组件: vuex;
 2. 增加ajax组件: axios, qs;
-3. 增加本地Mock方案: json-server, './mock/*.json';
+3. 增加本地Mock方案: json-server, 路径: mock;
+
+
+### 初始化命令:
+vue init johnsonGong/webpack#develop <name>
+如:
+vue init johnsonGong/webpack#develop test-templ-gong
