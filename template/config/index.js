@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     // proxyTable: {},
     proxyTable: {
-      "/repay/*": {
+      "/mock/*": {
         target: 'http://localhost:8095',
         changeOrigin: true,
         onProxyReq: function(proxyReq, req, res) {
