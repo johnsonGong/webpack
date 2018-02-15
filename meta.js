@@ -31,20 +31,20 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: 'Project name[项目名]',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'A Vue.js project',
+      default: 'A Vue.js project[这是一个做啥的项目]',
     },
     author: {
       when: 'isNotTest',
@@ -74,6 +74,12 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
+    vuex: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Do you wanner install VUEX?'
+    },
+
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -170,6 +176,7 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
+    'src/store/**/*': 'vuex',  //加入自己的目录
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
