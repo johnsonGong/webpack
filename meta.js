@@ -43,8 +43,8 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
-      default: 'A Vue.js project[这是一个做啥的项目]',
+      message: 'Project description[这是一个做啥的项目]',
+      default: 'A Vue.js project',
     },
     author: {
       when: 'isNotTest',
