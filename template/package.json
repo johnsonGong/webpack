@@ -5,6 +5,7 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
+    "mock": "node_modules/.bin/json-server --watch mock/db.json --routes mock/dbroutes.json --port 8095",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     {{#if_eq runner "jest"}}
@@ -25,6 +26,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
+    "qs": "^6.5.1",
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}{{#vuex}},
     "vuex": "^3.0.1"{{/vuex}}
@@ -99,6 +102,7 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "json-server": "^0.12.1",
     "webpack-bundle-analyzer": "^2.9.0",
     "node-notifier": "^5.1.2",
     "postcss-import": "^11.0.0",

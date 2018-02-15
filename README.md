@@ -64,3 +64,8 @@ You can fork this repo to create your own boilerplate, and use it with `vue-cli`
 ``` bash
 vue init username/repo my-project
 ```
+### forked by gonglong
+
+1. 增加状态管理组件: vuex;
+2. 增加ajax组件: axios, qs;
+3. 增加本地Mock方案: json-server, './mock/*.json';

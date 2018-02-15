@@ -10,12 +10,23 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // proxyTable: {},
+    proxyTable: {
+      "/repay/*": {
+        target: 'http://localhost:8095',
+        changeOrigin: true,
+        onProxyReq: function(proxyReq, req, res) {
+          // 将所有请求(post)全部的 method 代理为 GET
+          proxyReq.method = 'GET'
+          return proxyReq
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
