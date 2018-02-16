@@ -70,7 +70,8 @@ vue init username/repo my-project
 2. 增加ajax组件: axios, qs;
 3. 增加本地Mock方案: json-server, 路径: mock;
 4. 加入 api 调用方案;
-
+5. 加入 less 组件;
+6. 加入 postcss-adaptive 提高布局效率(单位换算 px TO REM);
 
 ### 初始化命令:
 vue init johnsonGong/webpack#develop <name>

@@ -2,5 +2,9 @@
   "initPage": {
     "message": "执行成功",
     "success": true
+  },
+  "getUserInfo": {
+    "message": "执行成功",
+    "success": true
   }
 }

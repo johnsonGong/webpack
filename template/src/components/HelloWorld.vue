@@ -98,6 +98,15 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created: function () {
+    console.log('[HelloWorld] --> created!')
+    this.API.initPage(result => {
+      console.log('[HelloWorld] --> POST:调用接口!')
+    })
+    this.API.testGetReq(result => {
+      console.log('[HelloWorld] --> GET:调用接口!')
+    })
   }
 }
 </script>

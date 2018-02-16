@@ -12,6 +12,9 @@ import store from './store'
 {{/vuex}}
 import API from './api/mock'
 
+import '@/assets/css/base.css'
+import '@/assets/css/tmp-main.less'
+
 Vue.config.productionTip = false
 Vue.prototype.API = API
 
