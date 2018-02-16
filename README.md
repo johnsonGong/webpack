@@ -69,6 +69,7 @@ vue init username/repo my-project
 1. 增加状态管理组件: vuex;
 2. 增加ajax组件: axios, qs;
 3. 增加本地Mock方案: json-server, 路径: mock;
+4. 加入 api 调用方案;
 
 
 ### 初始化命令:
